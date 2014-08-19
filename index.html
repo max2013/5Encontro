@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        <script src="lib/js/jquery.js"></script>
+        
+        
+        <!-- Jquery Mobile -->
+        <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.3.css"/>
+        <script src="jquery.mobile-1.4.3.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        
+        <!-- MY PLUGINS -->
+        <script type="text/javascript" src="lib/js/mobile-pages/ants_master.js"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/ants_serializeForm.js"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/js_install.js"></script>
+        <script type="text/javascript" src="lib/js/php.js"></script>
+        
+        
+        <!---- CSS PAGES/Views -->
+        <link rel="stylesheet" type="text/css" href="lib/css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="app/views/view_cadastro/lib/css/css_cadastro.css"/>
+        
+        <title>Sétimo Encontro de Especialistas Pfizer</title>
+        <script>
+            
+            OpenDataBase();
+            handleCreateDb();
+            /*function viewBrowser()
+            {
+                var ref = window.open('http://192.168.0.142:8000', '_blank', 'location=yes');
+            }*/
+        </script>
+    </head>
+    <body>
+      
+       <!-- Start of first page -->
+<div data-role="page" id="page-cadastro">
+        
+    
+
+	<div role="main" class="ui-content div-bgCadastro" data-position="fixed">
+            
+            <div class="baseDadosUser" id="baseDadosUser">		
+                <ul id="ulDataUser" data-role="listview" data-filter="true" data-filter-placeholder="Buscar Participantes" data-inset="true" style="height:350px; overflow-y:scroll;">
+                   
+                </ul>
+            </div>
+	</div><!-- /content -->
+
+        
+        <div data-role="footer" data-position="fixed">
+            <div class="divFooter" align="center"><a href="#page-new-cadastro" class="ui-shadow ui-btn ui-corner-all" >Cadastrar novo usuário</a></div>
+        </div> 
+</div><!-- /page -->
+
+
+
+       <!-- Start of first page -->
+<div data-role="page" id="page-new-cadastro">
+        
+    
+        <div data-role="header" class="ui-title">
+            <a href="#page-cadastro" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Voltar</a>
+		<h1>Cadastrar novo usuário</h1>
+	</div><!-- /header -->
+        
+
+	<div role="main" class="ui-content div-bgCadastro" data-position="fixed">
+            
+            <div align="center" class="baseDivNewCadastro" >
+                <form id="form-cadastro">
+                <ul id="ulCadastroUser">
+                     <li><input type="text" name="participantesNome" id="participantesNome" placeholder="Nome" value=""></li>
+                     <li><input type="text" name="participantesEmail" id="participantesEmail" placeholder="E-mail" value=""></li>
+                     <li><input type="text" name="participantesCrm" id="participantesCrm" placeholder="CRM" value=""></li>
+                     <li><input type="text" name="participantesTelefone" id="participantesTelefone" placeholder="Telefone" value=""></li>
+                     <li><input type="hidden" name="participantesStatus" id="participantesStatus" value="0"></li>
+                     <li class="bt-acesso-login"  onClick="handleInsertNewCadastro();"><p><input type="button" value="Cadastrar"></p></li>
+
+                 </ul>
+                </form>
+            </div>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+    </body>
+</html>
