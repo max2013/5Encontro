@@ -4,9 +4,9 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "br.com.maxexperience.setimoencontroespecialistas"
-        version   = "2.0.0">
+        version   = "2.1.0">
 
-    <name>Quinto Encontro Especialistas</name>
+    <name>5 Encontro Especialistas</name>
 
     <description>
         App para o Evento: Quinto Encontro de Especialistas
