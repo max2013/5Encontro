@@ -1,0 +1,40 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15/07/2014, 14:59:47
+    Author     : Rafael Alves Local
+*/
+
+.div-bgCadastro
+{
+    background-image: url(../../../../../images/images_app/Tela_01.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 689px;
+    
+}
+
+.baseDadosUser
+{
+    position: relative;
+    margin:0 auto;
+    width: 700px;
+    height: 400px;
+    top:230px;
+    
+   //display: none;
+}
+
+
+.baseDivNewCadastro
+{
+    position: absolute;
+    width: 600px;
+    margin-left: -300px;
+    left:50%;
+    top:230px;
+    
+}
