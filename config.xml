@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "br.com.maxexperience.setimoencontroespecialistas"
-        version   = "1.0.0">
+        version   = "2.0.0">
 
     <name>Quinto Encontro Especialistas</name>
 
@@ -56,7 +56,7 @@
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
-    <gap:splash src="images/images_app/Tela_00.jpg" gap:qualifier="land-xhdpi"/>
+    <gap:splash src="images/images_app/Tela_01.jpg" gap:qualifier="land-xhdpi"/>
     <icon src="res/icon/ios/icon-57.png"            gap:platform="ios"        width="57" height="57" />
     <icon src="res/icon/ios/icon-72.png"            gap:platform="ios"        width="72" height="72" />
     <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
