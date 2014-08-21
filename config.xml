@@ -6,10 +6,10 @@
         id        = "br.com.maxexperience.setimoencontroespecialistas"
         version   = "1.0.0">
 
-    <name>Sétimo Encontro Especialistas</name>
+    <name>Quinto Encontro Especialistas</name>
 
     <description>
-        App para o Evento: Sétimo Encontro de Especialistas
+        App para o Evento: Quinto Encontro de Especialistas
     </description>
 
     <author href="http://maxexperience.com.br" email="ralves.sql@gmail.com">

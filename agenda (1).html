@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        
+        
+        <!-- JS -->
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script src="lib/js/jquery.js"></script>
+        <script src="jquery.mobile-1.4.3.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/js_menu.js"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/js_agenda.js"></script>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="lib/css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.3.css"/>
+        <link rel="stylesheet" type="text/css" href="lib/css/css_master.css"/>
+        
+        
+        <title>Quinto Encontro de Especialistas Pfizer</title>
+       
+        <script>
+            OpenDataBase()
+            handleCreateDb();
+        </script>
+    </head>
+    <body>
+      
+       <!-- Start of first page -->
+       
+       <div data-role="page" class="ui-page ui-page-theme-a" >
+           
+           <!--Menu-->
+           <div data-role="panel" id="mypanel" class="divPanelMenu ui-panel" style="background-color: #0c518c;">
+                <!-- panel content goes here -->
+                
+                <div class="divMenuHeader">
+                    <div data-role="header" class="bg-headerMenu ui-header"> </div>
+                </div>
+                
+                <div class="divBaseMenu" id="divBaseMenu"> <!-- MENU JS --></div>
+                
+            </div>
+           
+           
+           
+           <!-- HEADER -->
+            <div data-role="header" class="bg-header ui-header">
+                     <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+                     <h1>Agenda</h1>
+            </div>
+
+           <!-- CONTENT -->
+           <div role="main" class="ui-content" style="background-color: #3569b2; position: relative; height: 688px;">
+                
+                <div data-role="tabs" id="tabs">
+                    <div data-role="navbar">
+                      <ul>
+                        <li><a href="#dia1" >Dia 22/08</a></li>
+                        <li><a href="#dia2" >Dia 23/08</a></li>
+                      </ul>
+                    </div>
+                    <div id="dia1"  style="background-color: #3569b2"> 
+                        <ul data-role="listview" data-inset="true">
+                          <li data-role="list-divider">Friday, October 8, 2010</li>
+                          <li><a href="index.html">
+                          <h2>Stephen Weber</h2>
+                          <p><strong>You've been invited to a meeting at Filament Group in Boston, MA</strong></p>
+                          <p>Hey Stephen, if you're available at 10am tomorrow, we've got a meeting with the jQuery team.</p>
+                              <p class="ui-li-aside"><strong>6:24</strong>PM</p>
+                          </a></li>
+                          <li><a href="index.html">
+                          <h2>jQuery Team</h2>
+                          <p><strong>Boston Conference Planning</strong></p>
+                          <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                              <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+                          </a></li>
+                          <li><a href="index.html">
+                          <h2>jQuery Team</h2>
+                          <p><strong>Boston Conference Planning</strong></p>
+                          <p>In preparation for the upcoming conference in Boston, we need to start gathering a list of sponsors and speakers.</p>
+                              <p class="ui-li-aside"><strong>9:18</strong>AM</p>
+                          </a></li>
+                          
+                      </ul>
+                    </div>
+                    <div id="dia2" >
+                      <ul data-role="listview" data-inset="true">
+                          <li><a href="#">Acura</a></li>
+                          <li><a href="#">Audi</a></li>
+                          <li><a href="#">BMW</a></li>
+                          <li><a href="#">Cadillac</a></li>
+                          <li><a href="#">Ferrari</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                
+            </div><!-- /content -->
+
+        </div>
+
+       <!-- /page -->
+
+
+    </body>
+</html>

@@ -1,19 +1,20 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         
         <!-- Jquery Mobile -->
-         <!---- CSS PAGES/Views -->
+        
         <link rel="stylesheet" type="text/css" href="lib/css/reset.css"/>
         
         <script type="text/javascript" src="phonegap.js"></script>
         <script src="lib/js/jquery.js"></script>
-        <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.3.css"/>
         <script src="jquery.mobile-1.4.3.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/ants_master.js"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/js_menu.js"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/js_home.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.3.css"/>
         <link rel="stylesheet" type="text/css" href="lib/css/css_master.css"/>
        
         
@@ -27,41 +28,33 @@
        <div data-role="page" class="ui-page" >
            
            <!-- Panel -->
-           <div data-role="panel" id="mypanel" class="divPanelMenu ui-panel" style="background-color: #0c518c;">
+           <div data-role="panel" id="mypanel" class="divPanelMenu ui-panel" style="background-color: #0c518c; height: 700px;">
                 <!-- panel content goes here -->
                 
                 <div class="divMenuHeader" style="margin-top: 20px;">
                     <div data-role="header" class="bg-headerMenu ui-header"> </div>
                 </div>
                 
-                <div class="divBaseMenu">
-                    <a href="#"><div class="linkMenu linkHome" > </div></a>
-                    <a href="#"><div class="linkMenu linkAgenda" > </div></a>
-                    <a href="#"><div class="linkMenu linkBlocoNotas" > </div></a>
-                    <a href="#"><div class="linkMenu linkEstudos" > </div></a>
-                    <a href="#"><div class="linkMenu linkPalestrantes" > </div></a>
-                    <a href="#"><div class="linkMenu linkPerguntas" > </div></a>
-                    <a href="#"><div class="linkMenu linkPesquisas" > </div></a>
-                </div>
+                <div class="divBaseMenu" id="divBaseMenu"></div>
+                
+                
             </div>
            
            
            
-           
+           <!-- Header -->
            <div data-role="header" class="bg-header ui-header" style="margin-top: 20px;" data-position="fixed">
                      <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
                      <h1>Bem vindo</h1>
                    
-            </div><!-- /header -->
-
-            <div role="main" class="ui-content" style="min-height: 700px;">
-                <p>Page content <a href="#mypanel"> goes here.</a></p>
-            </div><!-- /content -->
+            </div>
+           
+           <!-- Main -->
+            <div role="main" class="ui-content">
+                <video autoplay controls src="video/ipad_5o-Encontro_ipad.mp4" width="1000" height="650"></video>
+            </div>
 
         </div>
-
-       <!-- /page -->
-
 
     </body>
 </html>

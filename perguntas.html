@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Jquery Mobile -->
+        
+        <link rel="stylesheet" type="text/css" href="lib/css/reset.css"/>
+        
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script src="lib/js/jquery.js"></script>
+        <script src="jquery.mobile-1.4.3.min.js" type="text/javascript"></script>
+        <script src="lib/js/mobile-pages/js_menu.js"></script>
+        
+        
+        <script type="text/javascript" src="lib/js/mobile-pages/ants_master.js"></script>
+        <script type="text/javascript" src="lib/js/mobile-pages/js_perguntas.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.3.css"/>
+        <link rel="stylesheet" type="text/css" href="lib/css/css_master.css"/>
+        
+        <title>Quinto Encontro de Especialistas Pfizer</title>
+       
+        <script>
+            document.addEventListener('deviceready', onDeviceReady, false);
+        </script>
+    </head>
+    <body>
+      
+       <!-- Start of first page -->
+       
+       <div data-role="page" class="ui-page" >
+           
+           <!-- Panel -->
+           <div data-role="panel" id="mypanel" class="divPanelMenu ui-panel" style="background-color: #0c518c;">
+                <!-- panel content goes here -->
+                
+                <div class="divMenuHeader" style="margin-top: 20px;">
+                    <div data-role="header" class="bg-headerMenu ui-header"> </div>
+                </div>
+                
+                <div class="divBaseMenu" id="divBaseMenu">
+                    
+                </div>
+            </div>
+           
+           
+           
+           <!-- Header -->
+           <div data-role="header" class="bg-header ui-header" style="margin-top: 20px;" data-position="fixed">
+                     <a href="#mypanel" class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-bars ui-btn-icon-notext"></a>
+                     <h1>Faça sua pergunta ao palestrante</h1>
+                   
+            </div>
+           
+           <!-- Main -->
+            <div role="main" class="ui-content" >
+                <ul data-role="listview" data-inset="true">
+                <li data-role="list-divider">Informações</li>
+                <li ><label for="select-choice-a" class="select">Em qual sala você está?</label>
+                    <select name="perguntasSalasId" id="perguntasSalasId" data-native-menu="false">
+                        <option>Selecione uma Sala</option>
+                        <option value="1">Estou na Sala 1</option>
+                        <option value="2">Estou na Sala 2</option>
+                    </select>
+                </li>
+		<li><label for="perguntasTexto" class="select">Pergunta:</label><textarea cols="40" rows="15" name="perguntasTexto" id="perguntasTexto"></textarea> </li>
+		<li><input id="btAnotacoes" type="button" value="Enviar Pergunta"></li>
+		<li><div id="sleepNote"></div></li>
+                </ul>
+                
+            </div>
+
+        </div>
+
+    </body>
+</html>
